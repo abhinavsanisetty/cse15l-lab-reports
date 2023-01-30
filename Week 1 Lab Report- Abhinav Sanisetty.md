@@ -26,10 +26,12 @@
 ![Image](terminal.png)
 
 3) Some specific commands to try are:
-- cd
-- cd ~
-- ls -lat
-- ls -a
-- ls <directory>
+- ```cd```
+- ```cd ~```
+- ```ls -lat```
+- ```ls -a```
+- ```ls <directory>```
+
+I learned a lot from trying these commands because I have never really used the terminal before this class. I found it interesting how some class paths I thought would work weren't actually valid, and some that I didn't think were valid were actually correct.
   
   
