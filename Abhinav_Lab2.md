@@ -71,8 +71,8 @@ ArrayExamples.reverseInPlace(input1);
 assertArrayEquals(new int[]{ 3 }, input1);
 ```
 
-The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
-
+The symptom (the output of running the tests) 
+![Message 2](Symptoms.png)
 
 Before bug fix code:
 ```
@@ -98,6 +98,10 @@ static void reverseInPlace(int[] arr) {
 ```
 
 In the original code, it was modifying the first half of the elements fine. But after that, it stopped working, since it would start replacing the later values of the array with the new array values from the first half of the array rather than using the original values. The fix swaps elements from the first and second half of the array rather than simply modifying the array one element at a time to avoid that problem.
+
+### Part 3
+
+One new thing I learned about that was new to me is how running a server works. I felt the numberServer portion to be very interesting as I had never done anything with servers prior to that. Additionally, I learned that the port is used to identify the server itself that is running the code, while the localhost domain is the computer thats being used to run the server.
 
 
 
