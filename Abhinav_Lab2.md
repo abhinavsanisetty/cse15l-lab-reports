@@ -59,15 +59,46 @@ Here, the handleRequest method is the one being called. The only parameter that 
 ## Part 2
 
 Failure-Inducing input:
-A failure-inducing input for the buggy program, as a JUnit test and any associated code (write it as a code block in Markdown)
-
-An input that doesn’t induce a failure, as a JUnit test and any associated code (write it as a code block in Markdown)
+```
+int[] input2 = {4,5,6};
+ArrayExamples.reverseInPlace(input2);
+assertArrayEquals(new int[]{6,5,4}, input2);
+```
+Input that doesn't induce a failure:
+```
+int[] input1 = { 3 };
+ArrayExamples.reverseInPlace(input1);
+assertArrayEquals(new int[]{ 3 }, input1);
+```
 
 The symptom, as the output of running the tests (provide it as a screenshot of running JUnit with at least the two inputs above)
 
-The bug, as the before-and-after code change required to fix it (as two code blocks in Markdown)
 
-Briefly describe why the fix addresses the issue.
+Before bug fix code:
+```
+static void reverseInPlace(int[] arr) {
+   for(int i = 0; i < arr.length; i += 1) {
+     arr[i] = arr[arr.length - i - 1];
+   }
+ }
+```
+After bug fix code:
+```
+static void reverseInPlace(int[] arr) {
+    if(arr == null) {
+      return;
+    }
+    for(int i = 0; i < arr.length/2; i += 1) { //Change the time of iterations
+      int temp = arr[i]; //Swap the element, instead of assign
+      arr[i] = arr[arr.length - i - 1];
+      arr[arr.length - i - 1] = temp;
+    }
+  }
+
+```
+
+In the original code, it was modifying the first half of the elements fine. But after that, it stopped working, since it would start replacing the later values of the array with the new array values from the first half of the array rather than using the original values. The fix swaps elements from the first and second half of the array rather than simply modifying the array one element at a time to avoid that problem.
+
 
 
 
