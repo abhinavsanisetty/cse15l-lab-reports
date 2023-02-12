@@ -7,8 +7,6 @@ import java.io.IOException;
 import java.net.URI;
 
 class Handler implements URLHandler {
-   // The one bit of state on the server: a number that will be manipulated by
-   // various requests.
    String s = "";
 
    public String handleRequest(URI url) {
@@ -59,6 +57,7 @@ Here, the handleRequest method is the one being called. The only parameter that 
 ## Part 2
 
 Failure-Inducing input:
+The input here is the int array {4,5,6} and the expected output is the int array {6,5,4}
 ```
 int[] input2 = {4,5,6};
 ArrayExamples.reverseInPlace(input2);
