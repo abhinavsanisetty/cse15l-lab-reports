@@ -79,6 +79,8 @@ public void testReverseInPlace() {
 
 The symptom (the output of running the tests) 
 ![Message 2](Symptoms.png)
+![Output](TestOutput.png)
+```java -cp .: lib/hamc rest-core-1.3. jar: lib/junit-4.13.2.jar org-junit. runner. JUnitCore Array Tests```
 
 Before bug fix code:
 ```
