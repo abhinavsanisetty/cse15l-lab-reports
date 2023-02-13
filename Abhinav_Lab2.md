@@ -59,15 +59,22 @@ Here, the handleRequest method is the one being called. The only parameter that 
 Failure-Inducing input:
 The input here is the int array {4,5,6} and the expected output is the int array {6,5,4}
 ```
-int[] input2 = {4,5,6};
-ArrayExamples.reverseInPlace(input2);
-assertArrayEquals(new int[]{6,5,4}, input2);
+@Test
+public void testReverseInPlace() {
+   int[] input2 = {4,5,6};
+   ArrayExamples.reverseInPlace(input2);
+   assertArrayEquals(new int[]{6,5,4}, input2);
+}
 ```
 Input that doesn't induce a failure:
+The input here is the int array {3} and the expected output is the int array {3}
 ```
-int[] input1 = { 3 };
-ArrayExamples.reverseInPlace(input1);
-assertArrayEquals(new int[]{ 3 }, input1);
+@Test
+public void testReverseInPlace() {
+   int[] input1 = { 3 };
+   ArrayExamples.reverseInPlace(input1);
+   assertArrayEquals(new int[]{ 3 }, input1);
+}
 ```
 
 The symptom (the output of running the tests) 
