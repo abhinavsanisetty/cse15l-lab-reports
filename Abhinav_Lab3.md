@@ -6,6 +6,7 @@
 
 Code block of command:
 ```find written_2/non-fiction/OUP/ -type f```
+
 Code block of output:
 ```
 written_2/non-fiction/OUP//Berk/ch2.txt
@@ -61,6 +62,7 @@ This command will search for all regular files in the directory ‘/written_2/no
 **Example 2-**
 Code block of command:
 ```find written_2/non-fiction/OUP/ -type d```
+
 Code block of output:
 ```
 written_2/non-fiction/OUP/
@@ -103,6 +105,7 @@ This command will find all files in the directory ‘written_2/non-fiction/OUP/�
 **Example 2-**
 Code block of command:
 ```find written_2/non-fiction/OUP/ -size +100k```
+
 Code block of output:
 ```
 written_2/non-fiction/OUP//Berk/ch2.txt
@@ -119,6 +122,7 @@ Source: I used a ChatGPT search to find and learn about this command
 **Example 1-**
 Code block of command:
 ```find written_2/non-fiction/OUP/Castro -name "*.txt" -delete```
+
 Code block of output:
 
 *The delete command does not output anything to the terminal, so there is no output for this example*
@@ -130,6 +134,7 @@ This command will delete the files that match the specified criteria of the find
 **Example 2-**
 Code block of command:
 ```find written_2/non-fiction/OUP/Berk -name "*.txt" -delete```
+
 Code block of output:
 *The delete command does not output anything to the terminal, so there is no output for this example*
 
@@ -144,6 +149,7 @@ Source: I used a ChatGPT search to find and learn about this command
 **Example 1-**
 Code block of command:
 ```find written_2/non-fiction/OUP/Kauffman/ -name "*.txt" -exec wc {} \;```
+
 Code block of output:
 ```
      144   13373   80544 written_2/non-fiction/OUP/Kauffman//ch3.txt
@@ -164,6 +170,7 @@ This command will find all the files with a ‘.txt’ extension in the director
 **Example 2-**
 Code block of command
 ```find written_2/non-fiction/OUP/Kauffman/ -name "*.txt" -exec tail -1 {} \;```
+
 Code block of output
 ```
 
