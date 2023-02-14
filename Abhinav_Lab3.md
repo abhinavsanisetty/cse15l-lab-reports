@@ -1,4 +1,4 @@
-#** *Chosen command: find* **
+# *Chosen command: find* **
 
 Command Line Option/Alternative 1: ‘-type’ 
 
