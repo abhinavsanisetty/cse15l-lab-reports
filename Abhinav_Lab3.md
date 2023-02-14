@@ -136,6 +136,7 @@ Code block of command:
 ```find written_2/non-fiction/OUP/Berk -name "*.txt" -delete```
 
 Code block of output:
+
 *The delete command does not output anything to the terminal, so there is no output for this example*
 
 What is it doing, and why is it useful?
