@@ -39,9 +39,9 @@ Here I used the `sed` command to replace the first occurance of "1" with "2" on 
 
 **Step 8**
 
-`<up>``<up>``<enter>`
+`<up>` `<up>` `<enter>`
 
-`<up>``<up>``<enter>`
+`<up>` `<up>` `<enter>`
 
 ![step8](passTest.png)
 
