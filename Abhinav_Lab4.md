@@ -2,7 +2,7 @@
 
 **Step 4**
 
-ssh cs15lwi23adw@ieng6.ucsd.edu`<enter>`
+`ssh cs15lwi23adw@ieng6.ucsd.edu` `<enter>`
 ![step4](ssh.png)
 
 The single command used here is to log into the remote desktop. You then have to press `<enter>` to make the command actually run.
