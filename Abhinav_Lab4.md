@@ -16,17 +16,17 @@ The single command used here is to log into the remote desktop. You then have to
 
 ![step5](gitClone.png)
 
-The first command is used to clone the reporsitory that I forked to my github account in the setup. The link used is an ssh link instead of the standard HTTPS link. The ssh link is used instead because that way you dont need to login to your account again. The second command is used to switch into the lab7 directory so that I can run the JUnit tests in the next step. I pressed `<enter>` after each command to make the command actually run.
+The first command is used to clone the repository that I forked to my github account in the setup. The link used is an ssh link instead of the standard HTTPS link. The ssh link is used instead because that way you dont need to login to your account again. The second command is used to switch into the lab7 directory so that I can run the JUnit tests in the next step. I pressed `<enter>` after each command to make the command actually run.
 
 **Step 6**
 
-`javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar \*.java` `<enter>`
+`<Ctrl + V>` `javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar \*.java` `<enter>`
 
-`java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples` `<enter>`
+`<Ctrl + V>` `java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples` `<enter>`
 
 ![step6](failTest.png)
 
-The first command is used to compile java files, and the second command runs the JUnit tests on them. I pressed `<enter>` after each to command to make the command actually run.
+The first command is used to compile java files, and the second command runs the JUnit tests on them. I copied the commands from the website by using `<Ctrl + C>` on the website and then pressing `<Ctrl + V>` to paste it into the terminal. In the code blocks, I have includes the command to paste what I copied into the terminal, along with the actual command that I pasted into the terminal. I pressed `<enter>` after each to command to make the command actually run. 
 
 
 **Step 7**
