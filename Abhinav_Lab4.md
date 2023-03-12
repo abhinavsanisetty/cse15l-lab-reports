@@ -10,9 +10,9 @@ The single command used here is to log into the remote desktop. You then have to
 
 **Step 5**
 
-git clone git@github.com:abhinavsanisetty/lab7.git`<enter>`
+`git clone git@github.com:abhinavsanisetty/lab7.git` `<enter>`
 
-cd lab7`<enter>`
+`cd lab7` `<enter>`
 
 ![step5](gitClone.png)
 
@@ -20,9 +20,9 @@ The first command is used to clone the reporsitory that I forked to my github ac
 
 **Step 6**
 
-javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar \*.java`<enter>`
+`javac -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar \*.java` `<enter>`
 
-java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples`<enter>`
+`java -cp .:lib/hamcrest-core-1.3.jar:lib/junit-4.13.2.jar org.junit.runner.JUnitCore TestListExamples` `<enter>`
 
 ![step6](failTest.png)
 
@@ -31,7 +31,7 @@ The first command is used to compile java files, and the second command runs the
 
 **Step 7**
 
-sed -i ‘43 s/1/2/1’ ListExamples.java`<enter>`
+`sed -i ‘43 s/1/2/1’ ListExamples.java` `<enter>`
 
 ![step7](bugFix.png)
 
@@ -49,11 +49,11 @@ I clicked the up arrow twice and then pressed enter run the command to compile t
 
 **Step 9**
 
-git add ListExamples.java`<enter>`
+`git add ListExamples.java` `<enter>`
 
-git commit -m “Bug Fix”`<enter>`
+`git commit -m “Bug Fix”` `<enter>`
 
-git push `<enter>`
+`git push` `<enter>`
 
 ![step](updateChanges.png)
 
