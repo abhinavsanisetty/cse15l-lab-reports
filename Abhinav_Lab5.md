@@ -27,6 +27,7 @@ What is it doing, and why is it useful?
 Before running this command I first used the find command and saved the results to ‘find-results.txt’ the find command I used was find `written_2/ > find-results.txt`. This command will search for all lines in the file ‘find-results.txt’  that do not contain the string “.txt”. This option is basically used to invert the results of grep, so instead of finding all the lines that do have the string “.txt”, it finds all the lines that do not have that string. This command is useful because it lets you return only the lines that dont have a certain string with just one command.
 
 **Example 2-**
+
 Code block of command:
 ```grep -v "travel_guides" find-results.txt ```
 
@@ -97,6 +98,7 @@ Source: I used a ChatGPT search to find and learn about this command
 ## Command Line Option/Alternative 2: ‘-n’
 
 **Example 1-**
+
 Code block of command:
 ```grep -n "History" find-results.txt ```
 
@@ -154,6 +156,7 @@ What is it doing, and why is it useful?
 Before running this command I first used the find command and saved the results to ‘find-results.txt’ the find command I used was find `written_2/ > find-results.txt`. This command will search for all lines in the file ‘find-results.txt’ that contain the string “History”, and it will also provide the line numbers for these lines. This command is useful because it lets you find all the lines with a string but it also tells you all of the line numbers so you know exactly where in the file each of these lines are located.
 
 **Example 2-**
+
 Code block of command:
 ```grep -n "Portugal" find-results.txt```
 
@@ -172,10 +175,12 @@ Source: I used a ChatGPT search to find and learn about this command
 ## Command Line Option/Alternative 3: ‘-c’
 
 **Example 1-**
-Code block of command
+
+Code block of command:
 ```grep -c "History" find-results.txt```
 
 Code block of output:
+
 ```46```
 
 What is it doing, and why is it useful?
@@ -183,10 +188,12 @@ What is it doing, and why is it useful?
 Before running this command I first used the find command and saved the results to ‘find-results.txt’ the find command I used was find `written_2/ > find-results.txt`. This command will search for all lines in the file ‘find-results.txt’ that contain the string “History”, but rather than returning every line that has this string it instead counts how many lines have the string and returns the count instead. This command it useful because it lets you find the lines with a certain and count how many lines there in just one singular command.
 
 **Example 2-**
+
 Code block of command:
 ```grep -c "France" find-results.txt```
 
 Code block of output:
+
 ```4```
 
 What is it doing, and why is it useful?
@@ -198,20 +205,24 @@ Source: I used a ChatGPT search to find and learn about this command
 ## Command Line Option/Alternative 4: ‘-c’
 
 **Example 1-**
+
 Code block of command:
 ```grep -w -c "water" WhereToFrance.txt ```
 
 Code block of output:
+
 ```15```
 What is it doing, and why is it useful?
 
 This option will search for all lines in the file ‘WhereToFrance.txt’ that contain the string “water”, but it will only match whole words that exactly match the search pattern and wont count partial words or words that contain the search pattern as a substring. For example in this case, it will only match the instance where it finds the string “water”, but it will ignore words like “waterfall” or “watery” since they are not an exact match for the whole word and only contain the pattern as a substring. This option is useful since it lets you avoid partial matches or matches on substrings and lets you only find the exact matches.
 
 **Example 2-**
+
 Code block of command:
 ```grep -w -c "old" WhereToFrance.txt ```
 
 Code block of output:
+
 ```69```
 
 What is it doing, and why is it useful?
