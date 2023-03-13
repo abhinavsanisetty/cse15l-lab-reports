@@ -212,6 +212,7 @@ Code block of command:
 Code block of output:
 
 ```15```
+
 What is it doing, and why is it useful?
 
 This option will search for all lines in the file ‘WhereToFrance.txt’ that contain the string “water”, but it will only match whole words that exactly match the search pattern and wont count partial words or words that contain the search pattern as a substring. For example in this case, it will only match the instance where it finds the string “water”, but it will ignore words like “waterfall” or “watery” since they are not an exact match for the whole word and only contain the pattern as a substring. This option is useful since it lets you avoid partial matches or matches on substrings and lets you only find the exact matches.
