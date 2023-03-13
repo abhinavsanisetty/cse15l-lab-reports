@@ -202,7 +202,7 @@ Before running this command I first used the find command and saved the results 
 
 Source: I used a ChatGPT search to find and learn about this command
 
-## Command Line Option/Alternative 4: ‘-c’
+## Command Line Option/Alternative 4: ‘-w’
 
 **Example 1-**
 
